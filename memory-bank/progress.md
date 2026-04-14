@@ -11,7 +11,7 @@
 | Phase 1: Workspace Foundation | 🟢 Done | 100% | 2026-04-14 |
 | Phase 2: Memory Bank Init | 🟢 Done | 100% | 2026-04-14 |
 | Phase 3: First-Pass Project Fill | 🟢 Done | 100% | 2026-04-14 |
-| Phase 4: Real Use And Refinement | 🟡 In Progress | 40% | Ongoing |
+| Phase 4: Real Use And Refinement | 🟡 In Progress | 50% | Ongoing |
 
 ---
 
@@ -27,6 +27,7 @@
 - **2026-04-14**: Copy first-pass content vào 5 file memory-bank chính (projectbrief, activeContext, productContext, techContext, progress).
 - **2026-04-14**: ✨ Tạo SOP thật đầu tiên — AIMS User Access Creation & Management (production-quality, Word-ready, 4 appendices).
 - **2026-04-14**: ✨ Tạo Fit-Gap Assessment — AIMS Crew Management Module (12 gaps, 5 areas, prioritization matrix, 7 next steps).
+- **2026-04-14**: ✨ Tạo Vendor Question Pack — 18 questions từ Fit-Gap, 6 topics, priority matrix, ready-to-send email version.
 
 ---
 
