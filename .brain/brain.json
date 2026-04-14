@@ -1,7 +1,14 @@
 {
+  "meta": {
+    "schema_version": "1.1.0",
+    "awf_version": "4.0.2",
+    "last_updated": "2026-04-14T14:49:00+07:00"
+  },
   "project": {
     "name": "hermes-agent-for-hau",
     "description": "Workspace AI thực chiến trên nền Hermes để hỗ trợ công việc với AIMS, SOP, vendor, project coordination, analytics/reporting và governance.",
+    "type": "ai-operating-workspace",
+    "status": "active",
     "created_at": "2026-04-14T14:20:00+07:00"
   },
   "tech_stack": [
@@ -12,8 +19,46 @@
   "features": [
     "Memory Bank (project continuity across sessions)",
     "Skills: sop_writer, aims_analyst, project_coordinator",
+    "Templates: SOP, fit-gap, vendor-question, executive-memo, weekly-status, project-plan",
+    "Domain context: AIMS overview, department roles, vendor rules, integration rules, analytics rules",
     "Sanitized real examples for AI learning",
-    "Identity & domain context layer"
+    "Identity & domain context layer (SOUL.md)"
+  ],
+  "outputs_produced": [
+    {
+      "code": "SOP-AIMS-UAM-001",
+      "title": "SOP — AIMS User Access Creation & Management",
+      "type": "governance",
+      "file": "docs/output/SOP-AIMS-User-Access-Creation-and-Management.md"
+    },
+    {
+      "code": "FGA-AIMS-CRW-001",
+      "title": "Fit-Gap Assessment — AIMS Crew Management Module",
+      "type": "analysis",
+      "file": "docs/output/FitGap-AIMS-Crew-Management-Module.md"
+    },
+    {
+      "code": "VQP-AIMS-CRW-001",
+      "title": "Vendor Question Pack — Crew Module Gaps (18 questions)",
+      "type": "communication",
+      "file": "docs/output/Vendor-Question-Pack-AIMS-Crew-Module-Gaps.md"
+    },
+    {
+      "title": "Executive Memo — AIMS Crew Module Upgrade",
+      "type": "management",
+      "file": "docs/output/Executive-Memo-AIMS-Crew-Module-Upgrade.md"
+    },
+    {
+      "title": "Weekly Status Report — AIMS Crew Module",
+      "type": "reporting",
+      "file": "docs/output/Weekly-Status-AIMS-Crew-Module.md"
+    },
+    {
+      "code": "PP-AIMS-CRW-001",
+      "title": "Project Plan — AIMS Crew Module Upgrade (14 weeks, 6 phases)",
+      "type": "planning",
+      "file": "docs/output/Project-Plan-AIMS-Crew-Module-Upgrade.md"
+    }
   ],
   "decisions": [
     {
@@ -25,6 +70,26 @@
       "date": "2026-04-14",
       "decision": "Memory-bank first-pass đã copy vào 5 file chính",
       "reason": "Kích hoạt workspace từ template sang live"
+    },
+    {
+      "date": "2026-04-14",
+      "decision": "Tạo bộ output hoàn chỉnh cho AIMS Crew Module upgrade use case",
+      "reason": "Chứng minh workspace hoạt động end-to-end: analysis → action → decision → execution → tracking → governance"
     }
-  ]
+  ],
+  "knowledge_items": {
+    "patterns": [
+      "SOP follows governance template with appendices (form, approval matrix, tracker, role mapping)",
+      "Fit-Gap uses 12-column table: ID, Process, Current, Desired, Gap, Root Cause, Impact, Feasibility, Action, Owner, Priority, Status",
+      "Vendor questions grouped by topic with priority matrix and short email version",
+      "Executive memo follows: Summary → Recommendation → Rationale → Risks → Decision Needed → Next Steps",
+      "All outputs cross-reference each other via document codes (SOP-AIMS-UAM-001, FGA-AIMS-CRW-001, etc.)"
+    ],
+    "conventions": [
+      "Document codes: SOP-AIMS-XXX-NNN, FGA-AIMS-XXX-NNN, VQP-AIMS-XXX-NNN, PP-AIMS-XXX-NNN",
+      "Output files stored in docs/output/",
+      "Memory-bank updated after each output creation",
+      "All outputs are Word-ready (formal, structured, production-quality)"
+    ]
+  }
 }
