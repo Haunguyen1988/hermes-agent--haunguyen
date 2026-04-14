@@ -1,4 +1,4 @@
-# Active Context — [TÊN DỰ ÁN]
+# Active Context — Hermes Agent for Hau
 
 > **🔁 FILE NÀY PHẢI CẬP NHẬT MỖI SESSION.**
 > AI đọc file này đầu tiên. Giữ thông tin ngắn gọn, rõ ràng, luôn mới nhất.
@@ -6,60 +6,65 @@
 ---
 
 ## 📍 Trạng thái hiện tại
-- **Cập nhật lần cuối**: [YYYY-MM-DD HH:MM]
-- **Status**: [ ] 🟢 On Track   [ ] 🟡 At Risk   [ ] 🔴 Blocked
-- **Đang làm**: [Mô tả 1 câu đang làm feature/task gì]
-- **Sprint/Iteration**: [Sprint X / Week X / Phase X]
+- **Cập nhật lần cuối**: 2026-04-14 14:36
+- **Status**: [x] 🟢 On Track   [ ] 🟡 At Risk   [ ] 🔴 Blocked
+- **Đang làm**: Workspace fully live — đã tạo 2 output thật (SOP + Fit-Gap). Sẵn sàng cho task tiếp hoặc push GitHub.
+- **Sprint/Iteration**: Phase 4 — Real Use And Refinement
 
 ---
 
 ## ✅ Hoàn thành (session gần nhất)
 | Ngày | Task | Ghi chú |
 |------|------|---------|
-| [YYYY-MM-DD] | [Task đã xong] | [Commit / PR / file liên quan] |
-| [YYYY-MM-DD] | [Task đã xong] | |
+| 2026-04-14 | Tạo lớp identity, user profile, domain context, templates, and skills | `SOUL.md`, `context/`, `skills/` |
+| 2026-04-14 | Tạo examples cho 3 skills chính | `skills/*/examples/` |
+| 2026-04-14 | Tạo sanitized real examples và redaction policy | `kb/examples-real/` |
+| 2026-04-14 | Init bộ `memory-bank/` và project session rules | `memory-bank/`, `CLAUDE.md`, `AGENTS_PROJECT.md` |
+| 2026-04-14 | Copy first-pass content vào 5 file memory-bank chính | `memory-bank/*.md` |
+| 2026-04-14 | ✨ Tạo SOP thật đầu tiên: AIMS User Access Creation & Management | `docs/output/SOP-AIMS-User-Access-Creation-and-Management.md` |
+| 2026-04-14 | ✨ Tạo Fit-Gap Assessment: AIMS Crew Management Module (12 gaps, 5 areas) | `docs/output/FitGap-AIMS-Crew-Management-Module.md` |
 
 ---
 
 ## 🔄 Đang làm dở (Work In Progress)
 | Task | Tiến độ | File chính | Ghi chú |
 |------|---------|-----------|---------|
-| [Task 1] | [60%] | `src/xxx.py` | [đang làm đến đâu] |
-| [Task 2] | [20%] | `src/yyy.py` | [bắt đầu chưa] |
+| Bắt đầu dùng workspace cho use case thật | 100% ✅ | `docs/output/` | SOP AIMS User Access — use case thật đầu tiên hoàn thành |
+| Chuyển workspace từ template sang live operating system | 90% | `memory-bank/`, `README_HAU_WORKSPACE.md` | Đã dùng thật, cần thêm cases để tinh chỉnh |
 
 ---
 
 ## 🔴 Blockers (Đang bị chặn)
 | Vấn đề | Nguyên nhân | Kế hoạch giải quyết | Owner |
 |--------|-------------|---------------------|-------|
-| [Mô tả blocker] | [Tại sao bị block] | [Sẽ làm gì để unblock] | [Ai] |
 
-*Không có blocker → ghi "None"*
+*None — Không có blocker*
 
 ---
 
 ## 🔑 Quyết định quan trọng (session gần nhất)
 | Ngày | Quyết định | Lý do |
 |------|-----------|-------|
-| [YYYY-MM-DD] | Chọn [X] thay vì [Y] | [Lý do ngắn gọn] |
+| 2026-04-14 | Dùng repo Hermes hiện tại làm nền cho workspace riêng của Hau | Tận dụng agent framework có sẵn, đồng thời thêm lớp domain-specific và project memory |
+| 2026-04-14 | Tạo `AGENTS_PROJECT.md` thay vì ghi đè `AGENTS.md` | Tránh phá file hệ thống đang có sẵn trong repo |
+| 2026-04-14 | Lưu case thật dưới dạng sanitized examples | Giữ giá trị pattern nhưng vẫn an toàn dữ liệu |
 
 *Chi tiết hơn → xem `decisions-log.md`*
 
 ---
 
 ## ⏭️ Bước tiếp theo (Ưu tiên từ cao xuống thấp)
-1. 🔥 **[Task ưu tiên cao nhất]** — Ước tính: [2h] — `[file liên quan]`
-2. 📌 **[Task 2]** — Ước tính: [1h] — `[file liên quan]`
-3. 💡 **[Task 3]** — Ước tính: [3h] — `[file liên quan]`
+1. 🔥 **Push toàn bộ changes lên GitHub** — Ước tính: 5m
+2. 📌 **Tạo thêm output: vendor question hoặc executive memo** — Ước tính: 30m — `docs/output/`
+3. 📌 **Bổ sung sanitized versions vào kb/examples-real/** — Ước tính: 30m — `kb/examples-real/`
+4. 💡 **Tạo decision entry trong decisions-log.md** — Ước tính: 15m — `memory-bank/decisions-log.md`
 
 ---
 
 ## 📌 Lưu ý cho session tiếp theo
-> Những điều **phải biết** trước khi tiếp tục, không có ở chỗ nào khác.
-
-- ⚠️ [Cảnh báo / gotcha quan trọng]
-- 💡 [Ý tưởng cần thử]
-- 📎 [Context đặc biệt cần nhớ]
+- ⚠️ Repo này hiện là workspace layer trên Hermes, không phải một application product độc lập.
+- 💡 Ưu tiên dùng workspace này ngay cho task thật để tinh chỉnh rules và examples theo output thực tế.
+- 📎 Khi bắt đầu session mới, AI nên đọc `memory-bank/activeContext.md`, `memory-bank/progress.md`, và `README_HAU_WORKSPACE.md` trước.
 
 ---
 

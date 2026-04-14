@@ -1,0 +1,30 @@
+{
+  "project": {
+    "name": "hermes-agent-for-hau",
+    "description": "Workspace AI thực chiến trên nền Hermes để hỗ trợ công việc với AIMS, SOP, vendor, project coordination, analytics/reporting và governance.",
+    "created_at": "2026-04-14T14:20:00+07:00"
+  },
+  "tech_stack": [
+    "Python (Hermes base)",
+    "Markdown (Knowledge Layer)",
+    "GitHub (Repository)"
+  ],
+  "features": [
+    "Memory Bank (project continuity across sessions)",
+    "Skills: sop_writer, aims_analyst, project_coordinator",
+    "Sanitized real examples for AI learning",
+    "Identity & domain context layer"
+  ],
+  "decisions": [
+    {
+      "date": "2026-04-14",
+      "decision": "Dùng repo Hermes làm nền, thêm layer riêng cho Hau",
+      "reason": "Tận dụng agent framework có sẵn"
+    },
+    {
+      "date": "2026-04-14",
+      "decision": "Memory-bank first-pass đã copy vào 5 file chính",
+      "reason": "Kích hoạt workspace từ template sang live"
+    }
+  ]
+}
